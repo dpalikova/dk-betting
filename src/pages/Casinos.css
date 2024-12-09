@@ -1,0 +1,43 @@
+.casinos {
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.casinos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.page-heading {
+  color: #939393;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 744px) {
+  .casinos {
+    padding: 0;
+    width: 684px;
+    margin: 60px auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .casinos {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .casinos {
+    width: 1220px;
+  }
+}

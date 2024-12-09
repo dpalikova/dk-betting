@@ -1,0 +1,156 @@
+/* .info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.info-container .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 744px) {
+  .info-container {
+    gap: 29px;
+    height: 162px;
+    width: 331px;
+  }
+
+  .info-container .rating {
+    gap: 19px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .info-container {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 25px;
+    width: auto;
+  }
+
+  .info-container .rating {
+    width: 210px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info-container {
+    gap: 60px;
+  }
+} */
+/* 
+.bonus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bonus-container p {
+    margin: 0;
+  }
+  
+  .bonus > p {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  @media only screen and (min-width: 684px) {
+    .bonus {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (min-width: 744px) {
+    .bonus-container {
+      align-items: flex-start;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .bonus-container {
+      width: 149px;
+      align-items: center;
+    }
+    .bonus {
+      flex-direction: column;
+    }
+  }
+  
+   */
+
+.bonus-container {
+  text-align: center;
+  margin-top: 25px;
+
+  .bonus {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 34.13px;
+    }
+  }
+}
+
+@media only screen and (min-width: 684px) {
+  .bonus-container {
+    .bonus {
+      flex-direction: row;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 744px) {
+  .info-container {
+    width: 331px;
+  }
+  .bonus-container {
+    text-align: left;
+
+    .bonus {
+      justify-content: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .info-container {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+    width: unset;
+  }
+
+  .hr-container {
+    width: 210px;
+  }
+
+  .bonus-container {
+    text-align: center;
+    margin-top: 0px;
+    width: 149px;
+
+    .bonus {
+      margin-top: 5px;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

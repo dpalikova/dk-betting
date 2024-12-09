@@ -1,0 +1,95 @@
+/* .casino-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.casino-container .first-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 744px) {
+  .casino-container{
+    gap: 25px;
+  }
+
+  .casino-container .first-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+    height: 162px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .casino-container {
+    padding: 16px;
+    padding-right: 35px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .casino-container .first-row {
+    justify-content: unset;
+    gap: 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .casino-container {
+    padding-right: 70px;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+  .casino-container .first-row {
+    gap: 60px;
+  }
+} */
+
+.casino-container {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0px 0px 20px 0px #0000001a;
+}
+
+@media only screen and (min-width: 744px) {
+  .casino-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 37px;
+    row-gap: 25px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .casino-container {
+    grid-template-columns: min-content min-content min-content auto;
+    align-items: center;
+    gap: 25px;
+    text-align: left;
+    padding-right: 35px;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .casino-container {
+    grid-template-columns: min-content min-content min-content auto;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+    padding-right: 70px;
+  }
+}
